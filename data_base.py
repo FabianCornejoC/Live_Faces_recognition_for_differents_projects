@@ -5,13 +5,13 @@ import numpy as np
 
 
 # Pngs fold 
-base_path = r"C:\Yop\Proyecto_hobbie\Faces"
+base_path = r"C:\\"
 
 
 
 
 # Person name
-person = input("Nombre Completo_Rut (Ej. JuanRodriguez_12345678-k): ")
+person = input("Nombre Completo_Rut (Ej. JuanRodriguez): ")
 save_path = os.path.join(base_path, person)
 os.makedirs(save_path, exist_ok=True) # crate fold if not exists
 
@@ -89,4 +89,5 @@ with face_mesh.FaceMesh(    # face_mesh: defining variables
             break
 
 cap.release()
+
 cv2.destroyAllWindows()
